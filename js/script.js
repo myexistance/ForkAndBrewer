@@ -4,22 +4,22 @@
 $(document).ready(function(){
  $("#about").click(function (){
               $('html, body').animate({
-                  scrollTop: $(".about").offset().top-100
+                  scrollTop: $(".about").offset().top-50
               }, 800);
           });
  $("#food").click(function (){
               $('html, body').animate({
-                  scrollTop: $("#heading-food").offset().top-115
+                  scrollTop: $(".food").offset().top-50
               }, 800);
           });
  $("#beer").click(function (){
               $('html, body').animate({
-                  scrollTop: $("#heading-beer").offset().top-143
+                  scrollTop: $(".beer").offset().top-55
               }, 800);
           });
  $("#information").click(function (){
               $('html, body').animate({
-                  scrollTop: $("#heading-information").offset().top-141
+                  scrollTop: $(".information").offset().top-55
               }, 800);
           });
 

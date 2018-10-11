@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
 
   <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -17,6 +18,15 @@
 h2::first-letter {
     color: #ff0000;
     font-size: xx-large;
+}
+.navbar{
+  margin-top: -50px;
+  position: fixed;
+  width: 100%;
+  z-index: 3
+}
+.row {
+  margin-top: 50px;
 }
 
 </style>
@@ -40,10 +50,10 @@ h2::first-letter {
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active dropdown dropdown-toggle" data-toggle="dropdown"><a href="#">About</a></li>
-        <li><a href="#">Food</a></li>
-        <li><a href="#">Beer</a></li>
-        <li><a href="#">Information</a></li>
+        <li id="about" class="active dropdown dropdown-toggle" data-toggle="dropdown"><a href="#">About</a></li>
+        <li id="food"><a href="#">Food</a></li>
+        <li id="beer"><a href="#">Beer</a></li>
+        <li id="information"><a href="#">Information</a></li>
       </ul>
     </div>
   </div>
@@ -74,7 +84,7 @@ h2::first-letter {
 
     
     
-    <div class = "col-sm-6">
+    <div class = "col-sm-6 about">
     <h2 class="col-sm-10 col-lg-offset-1">About</h2>
 	<h4 class="col-sm-10 col-lg-offset-1 text-justify" style = "width: 95%">Wellington's Fork & Brewer brewpub was delighted to announce Kelly Ryan as our new brewer in mid 2014. Ryan is a talented and highly regarded brewer with experience working around New Zealand and the United Kingdom. His beers and ciders have won multiple awards at major beer shows. He's even been called a "bit of a brewing rock star." 
 
@@ -94,7 +104,7 @@ h2::first-letter {
 <!-- Food -->
 
 <div class = "row4">
-    <div class = "col-sm-6">
+    <div class = "col-sm-6 food">
 	<img class ="col-sm-7" src="image/6.jpg" style = "width:100%">
     </div>
     <div class = "col-sm-4">
@@ -117,7 +127,7 @@ h2::first-letter {
 <!--Beer -->
 
 <div class = "row5" style="clear:both"><hr>
-	<div class ="col-sm-6">
+	<div class ="col-sm-6 beer">
 		<h2>OFF the TAB</h2>
   		 	<h4> Fork Brewing / Odell Brewing Colorado Colourado, 6.5% abv</br>
         Fork Brewing and Burning Sky Ls Amis Due Brassage, 6.2% abv</br>
@@ -186,7 +196,7 @@ h2::first-letter {
 
 <!--Information -->    
     
-    <div class = "col-sm-6">
+    <div class = "col-sm-6 information">
     <h2 class="col-sm-10 col-lg-offset-1">Information</h2>
 	<h4 class="col-sm-10 col-lg-offset-1 text-justify" style = "width: 95%"><b>Contacts</b><br/>
 		Phone (04) 472 0033<br/>
