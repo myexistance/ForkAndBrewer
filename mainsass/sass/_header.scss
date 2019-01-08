@@ -1,25 +1,26 @@
 $primaryColor: white;
 $secondaryColor: brown;
 
-.header { 
+/*.header { 
   position: fixed;
   background-color:white;
   height: 110px;
   width:100%;
   z-index: 0;
 
-}
+}*/
 
-.nav_container {
+/*.nav_container {
   display: flex;
   justify-content: flex-end;
   background-color: primaryColor;
-}
+  color: black;
+}*/
 
 #logo {
   margin-left: 10%;
   height: 120px;
-  width: 150px; 
+  width: 50px; 
   float: left;
 }
 
@@ -43,7 +44,7 @@ button {
   border: none;
   width: 100px;
   background-color: $primaryColor;
-  color: $secondaryColor;
+  color: black;
 }
 
  div.header:after{
@@ -52,12 +53,12 @@ button {
 
 @media only screen and (max-width:500px){
   #logo {
-  margin-left: 30%;
+  margin-left: 0;
   height: 120px;
   width: 150px; 
   
 }
-  li{
+  /*li{
   display: inline-block;
   padding: 0px;
 }
@@ -65,15 +66,16 @@ button {
   button{
     background-color: transparent;
     width:0%;
-   /* left: 300px;
-    top:20px;*/
-}
+   
+    top:20px;
+}*/
 
-  .header {
+ /* .header {
     height: 110px;
-  }
+  }*/
 
   .nav_container {
+    display:none;
     width: 100%;
     height: 110px;
     align-items: center;

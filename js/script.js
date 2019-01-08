@@ -1,27 +1,35 @@
 
-
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
 $(document).ready(function(){
  $("#about").click(function (){
               $('html, body').animate({
-                  scrollTop: $(".about").offset().top-50
+                  scrollTop: $(".about").offset().top-100
               }, 800);
           });
  $("#food").click(function (){
               $('html, body').animate({
-                  scrollTop: $(".food").offset().top-50
+                  scrollTop: $("#heading-food").offset().top-115
               }, 800);
           });
  $("#beer").click(function (){
               $('html, body').animate({
-                  scrollTop: $(".beer").offset().top-55
+                  scrollTop: $("#heading-beer").offset().top-143
               }, 800);
           });
  $("#information").click(function (){
               $('html, body').animate({
-                  scrollTop: $(".information").offset().top-55
+                  scrollTop: $("#heading-information").offset().top-141
               }, 800);
           });
+
 
 /* hide nav container */
 
